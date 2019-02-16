@@ -1,0 +1,41 @@
+/* pages/message/message.wxss */
+/*1:组件的背景颜色*/
+page{
+  background-color: #f1f1f1;
+}
+/*2:卡片*/
+.card{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20rpx;/*圆角*/
+  margin: 60rpx 20rpx;/*外补丁*/
+  padding: 30rpx;/*内补丁*/
+  display: flex;/*弹性布局*/
+  flex-direction: column;/*按列排放*/
+}
+.card-title{
+  font-size: 20px;/*标题的文字大小*/
+  margin-bottom: 20rpx;/*底部外补丁*/
+}
+.card-date{
+  font-size: 14px;/*日期文字小一些*/
+  color:#ccc;/*日期颜色灰色*/
+  padding-bottom: 20rpx;/*补丁*/
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.card-image{
+  width: 100%;/*默认款100%*/
+  height: 300rpx;
+}
+.card-desc{
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+  margin: 20rpx 0;
+}
+.card-read{
+  font-size: 14px;
+  color: #666;
+}

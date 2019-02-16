@@ -1,0 +1,30 @@
+<view class='index_container'>
+  <!--1：轮播图 -->
+  <view class='slider'>
+    <swiper autoplay='true' interval='2500' indicator-dots='true'>
+    <swiper-item wx:for="{{list}}" wx:key="id">
+      <image src='{{item.img_url}}' lazy-load='true' mode='aspectFill'></image>
+    </swiper-item>
+  </swiper>
+  </view>
+  <!--2：九宫格 -->
+  <view class='index-nav'>
+    <view class='nav-item' wx:for="{{navlist}}" wx:key="index">
+      <image bindtap='handleTap' data-id="{{item.id}}" src='{{item.img_url}}' lazy-load='true' mode='aspectFill'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!--3：分隔块 -->
+  <view class='divider'></view>
+  <!--4：按钮 -->
+  <view class='index-enter'>
+    <navigator class='enter-item'>
+      <image src='http://127.0.0.1:3000/images/link-01.png'></image>
+    </navigator>
+    <navigator class='enter-item'>
+      <image src='http://127.0.0.1:3000/images/link-02.png'></image>
+    </navigator> 
+  </view>
+  
+  <!--5：tabbar -->
+</view>

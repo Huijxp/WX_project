@@ -1,0 +1,27 @@
+<!--pages/profile/profile.wxml-->
+<view class='container'>
+  <!--1:头像 -->
+  <view class="avatar">
+    <image lazy-load="true" mode='aspectFill' src='http://127.0.0.1:3000/images/avatar.png'        bindtap='onMusicTap'/>
+  </view>
+  <!--2：个人列表 -->
+  <view class='divider'></view>
+  <view class='cell'>
+    <view class='cell-item'>个人资料</view>
+    <view class='cell-item arrow'>我的优惠券</view>
+  </view>
+  <!--3：服务的条款 -->
+  <view class='divider'></view>
+  <view class='cell'>
+    <view class='cell-item'>常见问题</view>
+    <view class='cell-item arrow'>使用条款</view>
+    <view class='cell-item'>常见问题</view>
+    <view class='cell-item arrow'>使用条款</view>
+  </view>
+  <!--4：分割快 -->
+  <view class='divider'></view>
+  <view class='cell'>
+    <view class='cell-item arrow'>设置</view>
+  </view>
+  <!--5：设置 -->
+</view>

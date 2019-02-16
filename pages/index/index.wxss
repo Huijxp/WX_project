@@ -1,0 +1,52 @@
+/*功能一 轮播图*/
+.slider,.slider swiper,.slider image{
+  height:390rpx;
+  width:100%;
+}
+/*功能二：九宫格*/
+/*父元素*/
+.index-nav{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+.nav-item{
+  display: flex;/*弹性布局*/
+  width:33.33333%;
+  justify-content: center;/*水平居中*/
+  align-items: center;/*垂直居中*/
+  flex-direction: column;/*安列方式居中*/
+  height:200rpx;
+  box-sizing: border-box;
+  font-size: 14px;
+  /*1rpx 的边框*/
+  border-right: 1rpx solid #ccc;/*右侧边框*/
+  border-bottom: 1rpx solid #ccc;/*底部边框*/
+}
+.nav-item:nth-child(3n){
+  border-right:0 none;/*3 6 9 去掉右侧边框*/
+}
+/*子元素*/
+.nav-item image{
+  width:102rpx;
+  height:102rpx;
+}
+/* 功能三：添加分格块
+.divider{
+  height: 20rpx;
+  background: #f1f1f1;
+} */
+/*功能四：二个按钮*/
+.index-enter{
+  display: flex;
+  padding: 20rpx 42rpx;
+}
+.index-enter .enter-item{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.index-enter image{
+  width: 320rpx;
+  height:178rpx;
+}
